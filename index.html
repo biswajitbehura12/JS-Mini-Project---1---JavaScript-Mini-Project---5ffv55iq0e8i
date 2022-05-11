@@ -1,1 +1,43 @@
 
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="login2.css">  
+     <title>Document</title>
+ </head>
+ <body>
+     
+         <center><h1 style="color:red;">Welcome to Newton school login Page</h1></center>
+         <hr>
+         <div id="lo">
+         <form action ="babul.html"id="loo">
+          <label for="userid" style="font-size: 30px;">User id</label><br>
+          <input type="text" name="text" id="userid">
+          <br><br><br><br>
+
+          <label for ="password"style="font-size: 30px;">Password</label><br>
+          <input type="password" name="text" id="password">
+          <br><br>
+          <button id="button" onclick="login()">
+              Submit
+          </button>
+           
+         </form>
+     </div>
+ </body>
+ <script type="text/javascript">
+     function login(){
+         var unname=document.getElementById("userid").value;
+         var pass=document.getElementById("password").value;
+         if(unname =="biswajitbehura12"&& pass =="babul@567")
+         {
+             location.assign("file:///C:/Users/User/Desktop/login%20page/babul.html");
+         }else{
+             window.alert("login failed");
+         }
+     }
+ </script>
+ </html>
